@@ -3,7 +3,8 @@ import {withStyles} from '@material-ui/core/styles'
 import Paper from "@material-ui/core/Paper"
 import Grid from "@material-ui/core/Grid"
 import BreakPoint from './components/BreakPoints'
-import  FillingSpace  from "./components/FillingSpace";
+import FillingSpace  from "./components/FillingSpace";
+import FixedColumn  from "./components/FixedColumn";
 const style=theme=>(
 {
   App:{
@@ -28,10 +29,13 @@ function App({classes}) {
       <br/>
       <FillingSpace/>
 
+      <h1>Fixed width</h1>
+      <FixedColumn/>
+
 
       {/* Break point equal to auto */}
 
-      <Grid container spacing={4}> 
+      {/* <Grid container spacing={4}> 
       <Grid item xs="auto" sm="auto" md="auto">
         <Paper className={classes.paper}>xs=auto, sm=auto, md=auto</Paper>
       </Grid> 
@@ -47,7 +51,7 @@ function App({classes}) {
       <Grid item xs="auto" sm="auto" md="auto">
         <Paper className={classes.paper}>xs=auto, sm=auto, md=auto</Paper>
       </Grid> 
-      </Grid>
+      </Grid> */}
 
     </div>
   );
