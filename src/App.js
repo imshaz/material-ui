@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid"
 import BreakPoint from './components/BreakPoints'
 import FillingSpace  from "./components/FillingSpace";
 import FixedColumn  from "./components/FixedColumn";
+import FixedPosition from "./components/AppBar/FixedPosition"
 const style=theme=>(
 {
   App:{
@@ -23,6 +24,8 @@ paper:{
 function App({classes}) {
   return (
     <div className={classes.App}>
+
+    <FixedPosition/>
       <h1>Material-UI</h1>
       <BreakPoint/>
 
