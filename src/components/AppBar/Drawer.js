@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 
 export default function SideDrawer({show, hideDrawer}) {
   const classes = useStyles();
-  const [show1, setShow] = React.useState(false);
+
   const sideList = side => (
     <div className={classes.list} role="presentation">
       <List>
@@ -37,7 +37,7 @@ export default function SideDrawer({show, hideDrawer}) {
 
   return (
     <div>
-      <Button onClick={() => setShow(true)}>Open Left</Button>
+      {/* <Button onClick={() => setShow(true)}>Open Left</Button> */}
       <Drawer open={show} onClose={hideDrawer}>
         {sideList("left")}
       </Drawer>
