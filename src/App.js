@@ -6,6 +6,7 @@ import BreakPoint from './components/BreakPoints'
 import FillingSpace  from "./components/FillingSpace";
 import FixedColumn  from "./components/FixedColumn";
 import FixedPosition from "./components/AppBar/FixedPosition"
+import Drawer from './components/AppBar/Drawer'
 const style=theme=>(
 {
   App:{
@@ -36,6 +37,11 @@ function App({classes}) {
       <FixedColumn/>
 
 
+
+{/* Drawer */}
+
+
+<Drawer/>
       {/* Break point equal to auto */}
 
       {/* <Grid container spacing={4}> 
