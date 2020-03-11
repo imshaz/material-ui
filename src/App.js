@@ -1,12 +1,10 @@
 import React from 'react';
 import {withStyles} from '@material-ui/core/styles'
-import Paper from "@material-ui/core/Paper"
-import Grid from "@material-ui/core/Grid"
 import BreakPoint from './components/BreakPoints'
 import FillingSpace  from "./components/FillingSpace";
 import FixedColumn  from "./components/FixedColumn";
 import FixedPosition from "./components/AppBar/FixedPosition"
-import Drawer from './components/AppBar/Drawer'
+import Tab from './components/Tab/Tab'
 const style=theme=>(
 {
   App:{
@@ -26,8 +24,13 @@ function App({classes}) {
   return (
     <div className={classes.App}>
 
-    <FixedPosition/>
       <h1>Material-UI</h1>
+      {/* 
+Tab */}
+
+<Tab/>
+    <FixedPosition/>
+
       <BreakPoint/>
 
       <br/>
@@ -38,10 +41,7 @@ function App({classes}) {
 
 
 
-{/* Drawer */}
 
-
-<Drawer/>
       {/* Break point equal to auto */}
 
       {/* <Grid container spacing={4}> 
